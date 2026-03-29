@@ -23,6 +23,7 @@
             padding: 15px;
             text-align: center;
             border-bottom: 1px solid #00e5ff;
+            z-index: 1000;
         }
 
         header h1 {
@@ -102,17 +103,25 @@
             border-top: 1px solid #00e5ff;
         }
 
-        input, textarea {
-            width: 80%;
-            padding: 12px;
-            margin: 10px;
-            border-radius: 6px;
+        iframe {
+            width: 100%;
+            max-width: 700px;
+            height: 650px;
             border: none;
+            border-radius: 12px;
         }
 
         @media(max-width: 600px) {
             .hero h2 {
                 font-size: 28px;
+            }
+
+            .card {
+                width: 90%;
+            }
+
+            iframe {
+                height: 550px;
             }
         }
     </style>
@@ -193,14 +202,11 @@
 </section>
 
 <section id="contact">
-    <h2>Contact</h2>
-    <p>Reach out to get started</p>
-    <form>
-        <input type="text" placeholder="Name"><br>
-        <input type="email" placeholder="Email"><br>
-        <textarea placeholder="Message"></textarea><br>
-        <button class="btn">Send</button>
-    </form>
+    <h2>Contact & Sign Up</h2>
+    <p>Fill out the form below to get started!</p>
+
+    <!-- Embedded Google Form -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScgJtGNlCiKOQzZKes-iIijuQN6wuV8T2StZVmL4ViBaV5c2g/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </section>
 
 <footer>
