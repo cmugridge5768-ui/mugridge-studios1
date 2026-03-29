@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="9yZtHCkkB8_3iGJljnVIh5pDDU48gW9HDH3R5JkWopg" />
+    <title>Mugridge Studios</title>
+    <meta name="description" content="Mugridge Studios teaches youth to code online and in person. Learn programming and build projects!">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0a0a0a;
+            color: white;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(15,15,15,0.9);
+            backdrop-filter: blur(10px);
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #00e5ff;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #00e5ff;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00e5ff;
+        }
+
+        section {
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .hero {
+            background: linear-gradient(to bottom, black, #111);
+        }
+
+        .hero h2 {
+            font-size: 42px;
+        }
+
+        .btn {
+            background: #00e5ff;
+            color: black;
+            padding: 12px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #00bcd4;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background: #111;
+            margin: 15px;
+            padding: 25px;
+            border-radius: 12px;
+            width: 260px;
+            border: 1px solid #00e5ff33;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #00e5ff;
+        }
+
+        footer {
+            background: #111;
+            padding: 25px;
+            text-align: center;
+            border-top: 1px solid #00e5ff;
+        }
+
+        input, textarea {
+            width: 80%;
+            padding: 12px;
+            margin: 10px;
+            border-radius: 6px;
+            border: none;
+        }
+
+        @media(max-width: 600px) {
+            .hero h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🐺 Mugridge Studios</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#shop">Shop</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h2>Learn to Code. Build Your Future.</h2>
+    <p>Helping youth learn coding online and in person.</p>
+    <a href="#shop" class="btn">View Plans</a>
+</section>
+
+<section id="about">
+    <h2>About</h2>
+    <p>
+        Mugridge Studios teaches youth how to code through fun, real-world lessons.
+        We offer both online learning and in-person classes to help students grow
+        their skills and confidence in programming.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Services</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Online Learning</h3>
+            <p>Structured lessons you can do anytime.</p>
+        </div>
+
+        <div class="card">
+            <h3>In-Person Training</h3>
+            <p>Hands-on sessions with real guidance.</p>
+        </div>
+
+        <div class="card">
+            <h3>Beginner Friendly</h3>
+            <p>Perfect for students with no experience.</p>
+        </div>
+    </div>
+</section>
+
+<section id="shop">
+    <h2>Subscriptions</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Starter</h3>
+            <p>$10/month</p>
+            <p>Basic coding lessons</p>
+            <a class="btn" href="#">Join</a>
+        </div>
+
+        <div class="card">
+            <h3>Pro</h3>
+            <p>$25/month</p>
+            <p>All lessons + projects</p>
+            <a class="btn" href="#">Join</a>
+        </div>
+
+        <div class="card">
+            <h3>Elite</h3>
+            <p>$50/month</p>
+            <p>Includes in-person training</p>
+            <a class="btn" href="#">Join</a>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Reach out to get started</p>
+    <form>
+        <input type="text" placeholder="Name"><br>
+        <input type="email" placeholder="Email"><br>
+        <textarea placeholder="Message"></textarea><br>
+        <button class="btn">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Mugridge Studios</p>
+</footer>
+
+</body>
+</html>
